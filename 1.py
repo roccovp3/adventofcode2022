@@ -1,6 +1,5 @@
 import os
 pwd = os.path.dirname(__file__)
-print(pwd)
 def main():
     print(max(getSums())) #part 1
     print(sum(getMaxN(getSums(), 3))) #part2
