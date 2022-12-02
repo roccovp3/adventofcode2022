@@ -25,17 +25,15 @@ def getMaxN(sums, n):
     return max3
 
 def procInput():
-    input = []
     with open(pwd+"\\inputs\\input1.txt", "r") as f:
         lines = f.readlines()
-        input = [int(x[0:-1] if x != "\n" and "\n" in x else -1) for x in lines]
         # for i, x in enumerate(lines):
         #     if(x != "\n" and "\n" in x):
         #         x = int(x[0:-1])
         #         input.append(x)
         #     else:
         #         input.append(-1)
-    return input
+    return [int(x[0:-1]) if x != "\n" and "\n" in x else -1 for x in lines]
         
 
 if __name__ == "__main__":
