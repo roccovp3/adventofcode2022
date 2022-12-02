@@ -36,12 +36,6 @@ def getScore2():
 def procInput():
     with open(pwd+"\\inputs\\input2.txt", "r") as f:
         lines = f.readlines()
-        # for i, x in enumerate(lines):
-        #     if(x != "\n" and "\n" in x):
-        #         x = int(x[0:-1])
-        #         input.append(x)
-        #     else:
-        #         input.append(-1)
     return [[x[0], x[2]] for x in lines]
         
 
