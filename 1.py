@@ -33,7 +33,7 @@ def procInput():
         #         input.append(x)
         #     else:
         #         input.append(-1)
-    return [int(x[0:-1]) if x != "\n" and "\n" in x else -1 for x in lines]
+    return [int(x) if x != "\n" and "\n" in x else -1 for x in lines]
         
 
 if __name__ == "__main__":
